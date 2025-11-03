@@ -37,6 +37,7 @@ header {
 	flex-direction: column;
 	width: 100%;
 	align-items: center;
+	gap: 4em;
 }
 
 nav {
@@ -44,4 +45,43 @@ nav {
 	flex-direction: row;
 	width: 100%;
 	justify-content: space-between;
+}
+
+h1 {
+	color: var(--neutral-0);
+	font-family: "Bricolage Grotesque", sans-serif;
+	font-weight: 700;
+	font-size: 2.5rem;
+}
+
+#units {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	border: none;
+	color: var(--neutral-0);
+	background-color: var(--neutral-800);
+    padding: 0.6em;
+    gap: 0.5em;
+    font-size: 1.2em;
+    border-radius: 0.5em;
+}
+
+.gear {
+	height: 20px;
+	width: 20px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: block;
+	background-image: url("assets/images/icon-units.svg");
+}
+
+.arrow {
+    
+    height: 10px;
+    width: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    background-image: url("assets/images/icon-dropdown.svg");
 }

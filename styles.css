@@ -94,7 +94,7 @@ h1 {
 	justify-content: center;
 	align-items: center;
 	gap: 1em;
-    width: 100%;
+	width: 100%;
 }
 
 .search-icon {
@@ -112,11 +112,10 @@ h1 {
 	background-color: var(--neutral-800);
 	border-radius: 0.5em;
 	border: 2px solid transparent;
-	padding: 0.6em  1em  0.6em 1em ;
+	padding: 0.6em 1em 0.6em 1em;
 	gap: 1em;
 	box-sizing: border-box;
-    width: 28%;
-    
+	width: 28%;
 }
 .search:focus-within {
 	border: 2px solid var(--neutral-0); /* Border when div or its input is focused */
@@ -128,14 +127,14 @@ h1 {
 	border: none;
 	color: var(--neutral-0);
 	outline: none;
-    font-size: 1.2em;
+	font-size: 1.2em;
 }
 
 .search-button {
 	background-color: var(--blue-500);
 	color: var(--neutral-0);
 	border: none;
-	padding: 0.6em  1em  0.6em 1em ;
+	padding: 0.6em 1em 0.6em 1em;
 	border-radius: 0.5em;
 	cursor: pointer;
 	font-size: 1.2em;

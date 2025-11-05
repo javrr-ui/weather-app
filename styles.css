@@ -143,6 +143,28 @@ h1 {
 main {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(6, 1fr);
 	grid-gap: 2em;
 	margin-top: 3em;
+}
+
+.current-weather {
+	background-image: url("assets/images/bg-today-large.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	grid-column: span 2;
+	grid-row: span 3;
+	background-color: var(--neutral-800);
+	color: var(--neutral-0);
+	padding: 2em;
+	border-radius: 1.5em;
+}
+
+.hourly-forecast {
+	background-color: var(--neutral-800);
+	color: var(--neutral-0);
+	grid-column: span 1;
+	grid-row: span 6;
+	padding: 2em;
+	border-radius: 1.5em;
 }

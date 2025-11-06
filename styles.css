@@ -158,6 +158,40 @@ main {
 	color: var(--neutral-0);
 	padding: 2em;
 	border-radius: 1.5em;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+}
+
+.current-weather-info {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.location {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	
+}
+
+.city {
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+.date {
+	font-size: 1.2rem;
+	font-weight: 400;
+}
+
+.temperature {
+	font-size: 4rem;
+	font-weight: 700;
+	font-style: italic;
 }
 
 .hourly-forecast {

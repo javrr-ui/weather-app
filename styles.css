@@ -194,6 +194,7 @@ main {
 	font-style: italic;
 }
 
+/* Hourly forecast */
 .hourly-forecast {
 	background-color: var(--neutral-800);
 	color: var(--neutral-0);
@@ -201,4 +202,63 @@ main {
 	grid-row: span 6;
 	padding: 2em;
 	border-radius: 1.5em;
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+
+.forecast-header {
+	display: flex;
+	justify-content: space-between;
+	align-items:center;
+	font-size: 1.2rem;
+	font-weight: 700;
+}
+
+.day-select {
+	background-color: var(--neutral-600);
+	border: none;
+	display: flex;
+	align-items: center;
+	color: var(--neutral-0);
+	gap: 1em;
+	padding: 1em;
+	border-radius: 0.6em;
+	cursor: pointer;
+}
+
+.hourly {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: 700;
+}
+
+.hour-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hour-container p {
+	font-size: 1.2rem;
+}
+
+.icon-weather {
+	height: 40px;
+	width: 40px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: block;
+}
+
+.icon-drizzle {
+	background-image: url("assets/images/icon-drizzle.webp");
+}
+
+.hourly {
+	background-color: var(--neutral-700);
+	border: 1px solid var(--neutral-600);
+	border-radius: 0.5em;
+	padding: 1em;	
 }

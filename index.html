@@ -15,6 +15,24 @@
 		<nav>
 			<img src="./assets/images/logo.svg" alt="Logo">
 			<button id="units" tabindex="0"><i class="gear"></i>Units<i class="arrow"></i></button>
+			<div id="units-dropdown" class="dropdown-invisible">
+				<div class="switch">Switch to imperial</div>
+				<div class="temperature-switch">
+					<p>Temperature</p>
+					<button class="switch-btn celcius">Celcuis (°C) <icon class="checkmark"></icon></button>
+					<button class="switch-btn fahrenheit">Fahrenheit (°F)</button>
+				</div>
+				<div class="wind-speed-switch">
+					<p>Wind Speed</p>
+					<button class="switch-btn kmh">km/h<icon class="checkmark"></icon></button>
+					<button class="switch-btn mph">mph</button>
+				</div>
+				<div class="precipitation-switch">
+					<p>Precipitation</p>
+					<button class="switch-btn mm">Millimiters (mm)<icon class="checkmark"></icon></button>
+					<button class="switch-btn in">Inches (in)</button>
+				</div>
+			</div>
 		</nav>
 		<h1>How's the sky looking today?</h1>
 		<div class="search-container">

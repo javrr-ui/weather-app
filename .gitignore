@@ -41,3 +41,5 @@ Thumbs.db
 
 #Prettier config files
 .prettierrc
+# Snyk Security Extension - AI Rules (auto-generated)
+.github/instructions/snyk_rules.instructions.md

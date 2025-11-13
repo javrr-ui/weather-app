@@ -116,7 +116,7 @@ h1 {
 }
 
 .switch-btn  {
-	background-color: var(--neutral-700);
+	background-color: var(--neutral-800);
 	border: none;
 	width: 100%;
 	border-radius: 0.5em;
@@ -132,7 +132,20 @@ h1 {
 	background-color: var(--neutral-800);
 }
 
+.selected {
+	background-color: var(--neutral-700);
+}
+
 .checkmark {
+	height: 15px;
+	width: 15px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: block;
+	background-image: url("assets/images/icon-checkmark.svg");
+}
+
+.checkmark-selected {
 	height: 15px;
 	width: 15px;
 	background-repeat: no-repeat;

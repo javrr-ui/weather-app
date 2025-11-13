@@ -29,3 +29,33 @@ document.querySelector("#units").addEventListener("click", (event) => {
 		dropdown.classList.add("dropdown-visible");
 	}
 });
+
+// Temperature buttons
+
+const celcuisBtn = document.querySelector(".celcius");
+const celciusCheckmark = document.querySelector("#celcius-checkmark");
+const fahrenheitBtn = document.querySelector(".fahrenheit");
+const fahrenheitCheckmark = document.querySelector("#fahrenheit-checkmark");
+
+initButtons()
+
+
+celcuisBtn.addEventListener("click", () => {
+	celcuisBtn.classList.add("selected");
+	celciusCheckmark.classList.add("checkmark-selected");
+	fahrenheitBtn.classList.remove("selected");
+	fahrenheitCheckmark.classList.remove("checkmark-selected");
+});
+
+fahrenheitBtn.addEventListener("click", () => {
+	fahrenheitBtn.classList.add("selected");
+	fahrenheitCheckmark.classList.add("checkmark-selected");
+
+	celcuisBtn.classList.remove("selected");
+	celciusCheckmark.classList.remove("checkmark-selected");
+});
+
+function initButtons() {
+	celcuisBtn.classList.add("selected");
+	celciusCheckmark.classList.add("checkmark-selected");
+}

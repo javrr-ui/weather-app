@@ -31,14 +31,18 @@ document.querySelector("#units").addEventListener("click", (event) => {
 });
 
 // Temperature buttons
-
 const celcuisBtn = document.querySelector(".celcius");
 const celciusCheckmark = document.querySelector("#celcius-checkmark");
 const fahrenheitBtn = document.querySelector(".fahrenheit");
 const fahrenheitCheckmark = document.querySelector("#fahrenheit-checkmark");
 
-initButtons()
+// Wind Speed buttons
+const kmhBtn = document.querySelector(".kmh");
+const kmhCheckmark = document.querySelector("#kmh-checkmark");
+const mphBtn = document.querySelector(".mph");
+const mphCheckmark = document.querySelector("#mph-checkmark");
 
+initButtons();
 
 celcuisBtn.addEventListener("click", () => {
 	celcuisBtn.classList.add("selected");
@@ -55,7 +59,24 @@ fahrenheitBtn.addEventListener("click", () => {
 	celciusCheckmark.classList.remove("checkmark-selected");
 });
 
+kmhBtn.addEventListener("click", () => {
+	kmhBtn.classList.add("selected");
+	kmhCheckmark.classList.add("checkmark-selected");
+	mphBtn.classList.remove("selected");
+	mphCheckmark.classList.remove("checkmark-selected");
+});
+
+mphBtn.addEventListener("click", () => {
+	mphBtn.classList.add("selected");
+	mphCheckmark.classList.add("checkmark-selected");
+	kmhBtn.classList.remove("selected");
+	kmhCheckmark.classList.remove("checkmark-selected");
+});
+
 function initButtons() {
 	celcuisBtn.classList.add("selected");
 	celciusCheckmark.classList.add("checkmark-selected");
+
+	kmhBtn.classList.add("selected");
+	kmhCheckmark.classList.add("checkmark-selected");
 }

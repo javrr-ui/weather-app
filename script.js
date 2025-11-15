@@ -42,6 +42,13 @@ const kmhCheckmark = document.querySelector("#kmh-checkmark");
 const mphBtn = document.querySelector(".mph");
 const mphCheckmark = document.querySelector("#mph-checkmark");
 
+//Precipitation buttons
+const mmBtn = document.querySelector(".mm");
+const mmCheckmark = document.querySelector("#mm-checkmark");
+const inBtn = document.querySelector(".in");
+const inCheckmark = document.querySelector("#in-checkmark");
+
+
 initButtons();
 
 celcuisBtn.addEventListener("click", () => {
@@ -73,10 +80,27 @@ mphBtn.addEventListener("click", () => {
 	kmhCheckmark.classList.remove("checkmark-selected");
 });
 
+mmBtn.addEventListener("click", () => {
+	mmBtn.classList.add("selected");
+	mmCheckmark.classList.add("checkmark-selected");
+	inBtn.classList.remove("selected");
+	inCheckmark.classList.remove("checkmark-selected");
+});
+
+inBtn.addEventListener("click", () => {
+	inBtn.classList.add("selected");
+	inCheckmark.classList.add("checkmark-selected");
+	mmBtn.classList.remove("selected");
+	mmCheckmark.classList.remove("checkmark-selected");
+});
+
 function initButtons() {
 	celcuisBtn.classList.add("selected");
 	celciusCheckmark.classList.add("checkmark-selected");
 
 	kmhBtn.classList.add("selected");
 	kmhCheckmark.classList.add("checkmark-selected");
+
+	mmBtn.classList.add("selected");
+	mmCheckmark.classList.add("checkmark-selected");
 }

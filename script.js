@@ -116,6 +116,11 @@ document.querySelector("#switch-measurement").addEventListener("click", () => {
 		mphCheckmark.classList.add("checkmark-selected");
 		kmhBtn.classList.remove("selected");
 		kmhCheckmark.classList.remove("checkmark-selected");
+
+		inBtn.classList.add("selected");
+		inCheckmark.classList.add("checkmark-selected");
+		mmBtn.classList.remove("selected");
+		mmCheckmark.classList.remove("checkmark-selected");
 	} else {
 		switchButton.classList.remove("imperial");
 		switchButton.classList.add("metric");
@@ -125,5 +130,10 @@ document.querySelector("#switch-measurement").addEventListener("click", () => {
 		kmhCheckmark.classList.add("checkmark-selected");
 		mphBtn.classList.remove("selected");
 		mphCheckmark.classList.remove("checkmark-selected");
+
+		mmBtn.classList.add("selected");
+		mmCheckmark.classList.add("checkmark-selected");
+		inBtn.classList.remove("selected");
+		inCheckmark.classList.remove("checkmark-selected");
 	}
 });

@@ -13,6 +13,8 @@ document.addEventListener("click", (event) => {
 		}
 	}
 });
+//switch button
+const switchButton = document.querySelector("#switch-measurement");
 
 // Seach bar
 
@@ -47,7 +49,6 @@ const mmBtn = document.querySelector(".mm");
 const mmCheckmark = document.querySelector("#mm-checkmark");
 const inBtn = document.querySelector(".in");
 const inCheckmark = document.querySelector("#in-checkmark");
-
 
 initButtons();
 
@@ -104,3 +105,25 @@ function initButtons() {
 	mmBtn.classList.add("selected");
 	mmCheckmark.classList.add("checkmark-selected");
 }
+
+document.querySelector("#switch-measurement").addEventListener("click", () => {
+	if (switchButton.classList.contains("metric")) {
+		switchButton.classList.remove("metric");
+		switchButton.classList.add("imperial");
+		switchButton.textContent = "Switch to metric";
+
+		mphBtn.classList.add("selected");
+		mphCheckmark.classList.add("checkmark-selected");
+		kmhBtn.classList.remove("selected");
+		kmhCheckmark.classList.remove("checkmark-selected");
+	} else {
+		switchButton.classList.remove("imperial");
+		switchButton.classList.add("metric");
+		switchButton.textContent = "Switch to imperial";
+
+		kmhBtn.classList.add("selected");
+		kmhCheckmark.classList.add("checkmark-selected");
+		mphBtn.classList.remove("selected");
+		mphCheckmark.classList.remove("checkmark-selected");
+	}
+});

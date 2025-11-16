@@ -100,7 +100,7 @@ h1 {
 	padding: 0.4em;
 }
 
-.switch {
+#switch-measurement {
 	background-color: var(--neutral-700);
 	border-radius: 0.5em;
 	color: var(--neutral-0);

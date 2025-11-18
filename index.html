@@ -20,7 +20,8 @@
 				<div class="temperature-switch">
 					<p>Temperature</p>
 					<button class="switch-btn celcius">Celcius (°C) <icon id="celcius-checkmark"></icon></button>
-					<button class="switch-btn fahrenheit">Fahrenheit (°F)<icon id="fahrenheit-checkmark"></icon></button>
+					<button class="switch-btn fahrenheit">Fahrenheit (°F)<icon id="fahrenheit-checkmark"></icon>
+					</button>
 				</div>
 				<div class="wind-speed-switch">
 					<p>Wind Speed</p>
@@ -58,8 +59,17 @@
 		<div class="hourly-forecast">
 			<div class="forecast-header">
 				<h3>Hourly forecast </h3>
-				<button type="button" class="day-select">Tuesday <icon class="arrow"></icon>
+				<button type="button" id="day-select">Tuesday <icon class="arrow"></icon>
 				</button>
+			</div>
+			<div id="hourly-forecast-dropdown" class="hourly-forecast-dropdown-invisible">
+				<div id="monday" class="day selected-day">Monday</div>
+				<div id="tuesday" class="day">Tuesday</div>
+				<div id="wednesday" class="day">Wednesday</div>
+				<div id="thursday" class="day">Thursday</div>
+				<div id="friday" class="day">Friday</div>
+				<div id="saturday" class="day">Saturday</div>
+				<div id="sunday" class="day">Sunday</div>
 			</div>
 			<div class="hourly">
 				<div class="hour-container">

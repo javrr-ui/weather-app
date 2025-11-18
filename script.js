@@ -137,3 +137,38 @@ document.querySelector("#switch-measurement").addEventListener("click", () => {
 		inCheckmark.classList.remove("checkmark-selected");
 	}
 });
+
+// Day select button
+
+const daySelectButton = document.querySelector("#day-select");
+const daySelectDropdown = document.querySelector("#hourly-forecast-dropdown");
+
+daySelectButton.addEventListener("click", () => {
+	if (daySelectDropdown.classList.contains("hourly-forecast-dropdown-invisible")) {
+		daySelectDropdown.classList.remove("hourly-forecast-dropdown-invisible");
+		daySelectDropdown.classList.add("hourly-forecast-dropdown");
+	} else {
+		daySelectDropdown.classList.remove("hourly-forecast-dropdown");
+		daySelectDropdown.classList.add("hourly-forecast-dropdown-invisible");
+	}
+});
+
+const days = document.querySelectorAll(".day");
+days.forEach((day) => {
+	day.addEventListener("click", () => {
+		daySelectButton.textContent = day.textContent
+
+		const icon = document.createElement("icon");
+		icon.classList.add("arrow");
+		daySelectButton.appendChild(icon);
+
+		daySelectDropdown.classList.remove("hourly-forecast-dropdown");
+		daySelectDropdown.classList.add("hourly-forecast-dropdown-invisible");
+
+		days.forEach((day) => {
+			day.classList.remove("selected-day");
+		});
+
+		day.classList.add("selected-day");
+	});
+});
